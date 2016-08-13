@@ -21,4 +21,8 @@ Vagrant.configure(2) do |config|
     # Customize the amount of memory on the VM:
     vb.memory = "1024"
   end
+
+  config.vm.provision "file", source: "p/run_sql.sh", destination: "run_sql.sh"
+  config.vm.provision "shell", path: "provision/bootstrap.sh"
+
 end

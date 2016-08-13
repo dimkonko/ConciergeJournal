@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source $RUN_SQL_PATH
+source /opt/run_sql.sh
 
 run_sql drop/drop-door-tables.sql
